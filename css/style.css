@@ -1,0 +1,376 @@
+/* 
+#eafc40 
+#2b2b3a
+#1ed0f4
+rgb(199, 199, 199)
+*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+background: radial-gradient(at bottom, #2b2b3a, #010008);
+background-attachment: fixed;
+}
+header{
+    
+    background-color: #2b2b3a;
+    height: 140px;
+    box-shadow: 0px 5px 0px #1ed0f4;
+}
+.main_container{
+    display: table;
+    background-color:#2b2b3a;
+    width: 800px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color:  rgb(235, 235, 235);
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    border-radius: 5px;
+   
+}
+.header__img{
+    display: inline-block;
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;  
+}
+.header__logo{
+    height: 100px;
+    width: 100px;
+}
+.header_text{
+    float: left;
+    display: flex;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    margin-top: 29px;
+    margin-left: 10px;
+    left: 118px;
+}
+.header_text a{
+text-decoration: none;
+color: rgb(235, 235, 235);
+}
+.header_text a:hover{
+    color: #eafc40 ;
+    }
+.nav{
+    float: left;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    font-size: 20px;    
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.nav a {
+    text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/ 
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+    color:rgb(235, 235, 235);/*Задаём цвет ссылки*/
+}
+.nav a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 3px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: rgb(235, 235, 235); /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.nav a:hover:after,
+.nav a:focus:after {
+    width: 100%;
+}
+.nav a:hover{
+    color:#eafc40;
+} 
+.nav__link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.entrance{
+    float: right;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    font-size: 20px;    
+    margin-top: 70px;
+    margin-left: 10px;  
+}
+.entrance a {
+    text-decoration:none;
+    display: inline-block;
+    line-height: 1;
+    color:rgb(235, 235, 235);
+}
+.entrance a:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(235, 235, 235);
+    transition: width 0.4s ease-in-out;
+}
+.entrance a:hover:after,
+.entrance a:focus:after {
+    width: 100%;
+}
+.entrance a:hover{
+    color:#eafc40;
+} 
+.entrance__link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #1d1d27;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgb(235, 235, 235);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin-top: 5px;
+  min-height: 30px;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+}
+
+button:hover,
+button:focus {
+  background-color: #254558;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #2b2b3a;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+.link a {
+    font-size: 20px;
+    text-decoration:none;
+    display: inline-block;
+    line-height: 1;
+    color:rgb(235, 235, 235);
+}
+.link a:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(235, 235, 235);
+    transition: width 0.4s ease-in-out;
+}
+.link a:hover:after,
+.link a:focus:after {
+    width: 100%;
+}
+.link a:hover{
+    color:#eafc40;
+} 
+b{
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+    color: red;
+}
+center{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: red;
+}
+input{
+    margin: 5px;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    background-color: #2b2b3a;
+    color: rgb(235, 235, 235);
+}
+h1{
+    font-size: 18px;
+}
+.ava{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.user_name{
+    font-size: 15;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.post_img{
+    width: 800px;
+}
+.like{
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.msg{
+    font-size: 20px;
+    color: red
+    ;
+}
+.avatar{
+width: 200px;
+height: 200px;
+border: 100px;
+
+}
+.avatar_sw{
+    width: 200px;
+    height: 200px;
+    border: 100px;
+    float: left;
+    margin-left: 51px;
+    }
+.popup {
+    position: fixed;
+    width: 800px;
+    top: 165px;
+    height: 200px;
+    background-color:#2b2b3a;
+    display: none;
+    border-radius: 5px;
+}
+.popup2 {
+    position: fixed;
+    width: 800px;
+    top: 165px;
+    height: 200px;
+    background-color:#2b2b3a;
+    display: none;
+    border-radius: 5px;
+}
+.main_container_personal{
+    background-color:#2b2b3a;
+    width: 800px;
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color:  rgb(235, 235, 235);
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    border-radius: 5px;
+   
+}
+.post_add{
+    position: fixed;
+    top: 165px;
+    width: 800px;
+    height: auto;
+    background-color:#2b2b3a;
+    border-radius: 5px; 
+    display: none;
+}
+.post_close{
+    width: 800px;
+    height: 50px;
+    background-color:#2b2b3a;
+    border-radius: 5px; 
+    margin-top: 25px;
+
+}
+a{
+    color:rgb(235, 235, 235);;
+}
+.avatar_main{
+display: inline-block;
+}
+.who{
+display: inline-block;
+vertical-align: top;
+text-align: left;
+margin-top: 10px;
+
+}
+.popul_link_main{
+vertical-align: bottom;
+display: inline-block;
+margin-bottom: 10px;
+text-align: right;
+}
+.popup_img{
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+}
+.avatar_upload{
+    vertical-align: top;
+    width: 150px;
+    background-color: #2b2b3a;
+    margin-top: 15px;
+}
+.text_area{
+    margin: 5px;
+    width: 790px;
+    border-radius: 5px;
+    background-color: #2b2b3a;  
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: rgb(235, 235, 235);
+}
+.title_post{
+    width: 790px;
+}
+.img_upload{
+    width:200px;
+    height: 50px;
+}
+.open_popup_post{
+    margin-top: 15px;
+}
+.post_text{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.post_subtext{
+    font-size: 15px;
+}
+.change_button{
+    margin-right: 26px;
+}
